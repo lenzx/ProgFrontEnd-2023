@@ -1,15 +1,16 @@
 import logo from './logo.svg';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React,{useEffect,useState} from 'react';
+import Home from './components/Home'
+import PerfilPag from './components/PerfilPag';
 import './App.css';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <h1>Nueva Pagina Inicio</h1>
-      <p>hola desde aqui</p>
       <Routes>
-
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/perfil" element={<PerfilPag />} />
       </Routes>
     </BrowserRouter>
   );
