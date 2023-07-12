@@ -24,7 +24,10 @@ const Ejercicio = () =>{
             <button onClick={handleNumero}>Calcular factorial</button>
         </div>
         {
-            valor > 0  && <p>El factorial {valor} es {respuesta}</p>
+            valor >= 0  && <p>El factorial {valor} es {respuesta}</p>
+        }
+        {
+            valor < 0  && <p> el numero ingresado es erroneo</p>
         }
         <div id="respuesta">
 
